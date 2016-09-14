@@ -5,10 +5,12 @@
 **Data.gov.s[]()g** was launched in 2011 as the Singapore government's [open data](http://opendatahandbook.org/guide/en/what-is-open-data/) portal. To date, 70 government agencies have published data on the portal. 
 
 In 2014, we started on a revamp of the site to make our data:
+
 1. More relevant to the general public
 2. More usable for researchers, developers and other power users. 
 
 To meet these requirements, we drafted a new set of *data quality standards* to ensure *all* published data can be:
+
 1. Visualised in charts and maps
 2. Accessible via APIs
 
@@ -42,6 +44,7 @@ Hadley proposes three principles:
 
 ### 3. Consistency
 Each variable should be processed and documented in the same way across datasets. Examples include:
+
 - Date formats
 - Null and negligible values
 - Unit of measurement
