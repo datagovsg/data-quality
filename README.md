@@ -106,18 +106,18 @@ When users download a dataset from **Data.gov.s[]()g**, the zip file contains:
 - Based on ISO8601, an international standard for representing date and time. We chose the "extended format" with the hyphens because it is humanly more readable.
     - Compare 2016-01-01 to 20160101
 
-- All date and time variables are presumed to be in UTC +8hrs unless specified.
+- All date and time variables must be in UTC +8hrs unless specified.
 
 - Date variables:
 
-    | Interval    | Column name | Format     | Range of values    | Example  |
-    |-------------|-------------|------------|--------------------|----------|
-    | Annual      | `year`      | YYYY       | YYYY: 1900 onwards | 2015     |
-    | Monthly     | `month`     | YYYY-MM    | MM: 01 to 12       | 2015-01  |
-    | Daily       | `date`      | YYYY-MM-DD | DD: 01 to 31       | 42035    |
-    | Weekly      | `week`      | YYYY-[W]WW | [W]WW: W01 to W52  | 2015-W01 |
-    | Quarterly   | `quarter`   | YYYY-[Q]Q  | [Q]Q: Q1 to Q4     | 2015-Q1  |
-    | Half-yearly | `half_year` | YYYY-[H]H  | [H]H: H1 or H2     | 2015-H1  |
+    | Interval    | Column name | Format     | Range of values    | Example   |
+    |-------------|-------------|------------|--------------------|-----------|
+    | Annual      | `year`      | YYYY       | YYYY: 1900 onwards | 2015      |
+    | Monthly     | `month`     | YYYY-MM    | MM: 01 to 12       | 2015-01   |
+    | Daily       | `date`      | YYYY-MM-DD | DD: 01 to 31       | 2015-01-01|
+    | Weekly      | `week`      | YYYY-[W]WW | [W]WW: W01 to W52  | 2015-W01  |
+    | Quarterly   | `quarter`   | YYYY-[Q]Q  | [Q]Q: Q1 to Q4     | 2015-Q1   |
+    | Half-yearly | `half_year` | YYYY-[H]H  | [H]H: H1 or H2     | 2015-H1   |
     
 - For financial periods, prefix “financial_” to column name:
 
