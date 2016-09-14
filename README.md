@@ -102,8 +102,11 @@ When users download a dataset from **Data.gov.s[]()g**, the zip file contains:
 ### 4. Date and Time Variables
 - Based on ISO8601, an international standard for representing date and time. We chose the "extended format" with the hyphens because it is humanly more readable.
     - Compare 2016-01-01 to 20160101
+
 - All date and time variables are presumed to be in UTC +8hrs unless specified.
+
 - Date variables:
+
     | Interval    | Column name | Format     | Range of values    | Example  |
     |-------------|-------------|------------|--------------------|----------|
     | Annual      | `year`      | YYYY       | YYYY: 1900 onwards | 2015     |
@@ -122,14 +125,18 @@ When users download a dataset from **Data.gov.s[]()g**, the zip file contains:
     | Financial, half-yearly | `financial_half_year` | YYYY-[H]H | 2015-H1 |
 
     - Financial year start-date must be indicated in metadata
+
 - For date-time variables:
+
     | Type        | Column name | Format                     | Example             |
     |-------------|-------------|----------------------------|---------------------|
     | Date + time | `date_time` | YYYY-MM-DD[T]hh:mm         | 2015-01-01T12:00    |
     |             |             | *or* YYYY-MM-DD[T]hh:mm:ss | 2015-01-01T12:00:00 |
     | Time only   | `time`      | hh:mm                      | 12:00               |
     |             |             | *or* hh:mm:ss              | 12:00:00            |
+
 - Specify the timezone if it is not UTC +8hrs:
+
     | Type        | Column name | Format                     | Example               |
     |-------------|-------------|----------------------------|-----------------------|
     | Date + time | `date_time` | YYYY-MM-DD[T]hh:mm+hh:mm   | 2015-01-01T12:00+00:00|
@@ -170,11 +177,13 @@ When users download a dataset from **Data.gov.s[]()g**, the zip file contains:
 
 ### 8. Null/negligible values
 - For any variable type:
+
     | Value | Meaning                                |
     |-------|----------------------------------------|
     | na    | Datum not available or not applicable  |
     | -     | Datum is negligible or not significant |
     | s     | Datum is suppressed                    |
+
 - If possible, explain why there are such values in the metadata
 
 ---
